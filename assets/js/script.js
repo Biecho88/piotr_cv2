@@ -22,13 +22,13 @@ function sendMail() {
     emailjs
         .send(serviceID,templateID,params)
         .then((res) =>{
-                document.getElementById("name").value = "";
-                document.getElementById("email").value = "";
-                document.getElementById("number").value = "";
-                document.getElementById("subject").value = "";
-                document.getElementById("message").value = "";
-                consol.log(res);
-                alert("Your email has been sent. Thanks You")
+            document.getElementById("name").value = "";
+            document.getElementById("email").value = "";
+            document.getElementById("number").value = "";
+            document.getElementById("subject").value = "";
+            document.getElementById("message").value = "";
+            consol.log(res);
+            alert("Your email has been sent. Thanks You");
         })
         .catch((err) => consol.log(err));
 }
